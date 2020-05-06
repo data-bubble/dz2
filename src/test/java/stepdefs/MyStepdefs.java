@@ -1,5 +1,6 @@
 package stepdefs;
 
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -7,11 +8,16 @@ import cucumber.api.java.ru.Если;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.Тогда;
 import org.apache.http.MethodNotSupportedException;
+import org.junit.Ignore;
 import pages.AbstractPage;
 import test.constants.CssSelectors;
 import pages.interfaces.ElementAction;
 
+import javax.swing.text.html.Option;
 import java.lang.reflect.InvocationTargetException;
+import java.util.AbstractList;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -62,9 +68,10 @@ public class MyStepdefs implements ElementAction {
     @Тогда("на странице {string} открываем случайный элемент из {string} не являющийся {string}")
     public void наСтраницеОткрываемСлучайныйЭлементИзНеЯвляющийся(String title, String nameOfList, String ignoreText) throws IllegalAccessException, ClassNotFoundException, InstantiationException, InvocationTargetException, MethodNotSupportedException {
         ElementsCollection collection=getPageByTitle(title).getElementsByName(nameOfList);
-        SelenideElement element=collection.stream().filter((el)->!(el.getText().contains(ignoreText))).findAny().get();
-   //     int random=(int)(Math.random()*collection.size());
-       // SelenideElement element=collection.get(random);
+     //   SelenideElement element=collection.stream().filter((el)->!(el.getText().contains(ignoreText))).findAny().get();
+        ElementsCollection filterCollection=collection.filterBy(Condition.not(text(ignoreText)));
+        int random=(int)(Math.random()*filterCollection.size());
+        SelenideElement element=filterCollection.get(random);
         SelenideElement titleOfelement=element.find(CssSelectors.TITLE_OF_THEME);
        titleOfelement.shouldHave(Condition.visible).click();
 

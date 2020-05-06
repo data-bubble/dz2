@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93aae763-a099-4bb9-96f3-dfe379cc7a40" name="Default Changelist" comment="cucumber commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/annotations/Elements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TopicPage.java" afterDir="false" />
+    <list default="true" id="93aae763-a099-4bb9-96f3-dfe379cc7a40" name="Default Changelist" comment="last commit,change step  getting item of themes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/MyLoader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/pc/Lo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/pc/Me.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/pc/Se.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/MyDebugTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/MyDebugTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/test.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AbstractPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/Hook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/MyStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/interfaces/ElementAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/interfaces/ElementAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/MyDebugTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/MyDebugTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/AbstractPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/Hook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/Hook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/MyLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/pc/Lo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/pc/Me.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/pc/Se.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/MyStepdefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/MyStepdefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/interfaces/ElementAction$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/interfaces/ElementAction.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,12 +151,20 @@
       <option name="project" value="LOCAL" />
       <updated>1588428096066</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last commit with Page_Object for all steps">
+      <created>1588776012750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588776012750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cucumber commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="cucumber commit" />
+    <MESSAGE value="last commit with Page_Object for all steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit with Page_Object for all steps" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587918580727">
@@ -195,30 +192,30 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="614" y="424" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1680.1027@0.23.1680.1027" timestamp="1588588602349" />
-    <state x="469" y="139" key="CommitChangelistDialog2" timestamp="1588775642307">
+    <state x="442" y="100" key="CommitChangelistDialog2" timestamp="1588782014905">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="469" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588775642307" />
-    <state width="1638" height="265" key="GridCell.Tab.0.bottom" timestamp="1588775470358">
+    <state x="442" y="100" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588782014905" />
+    <state width="1638" height="265" key="GridCell.Tab.0.bottom" timestamp="1588781546607">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207012" />
-    <state width="1638" height="265" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470358" />
-    <state width="1638" height="265" key="GridCell.Tab.0.center" timestamp="1588775470356">
+    <state width="1638" height="265" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588781546607" />
+    <state width="1638" height="265" key="GridCell.Tab.0.center" timestamp="1588781546606">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207011" />
-    <state width="1638" height="265" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470356" />
-    <state width="1638" height="265" key="GridCell.Tab.0.left" timestamp="1588775470356">
+    <state width="1638" height="265" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588781546606" />
+    <state width="1638" height="265" key="GridCell.Tab.0.left" timestamp="1588781546605">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207010" />
-    <state width="1638" height="265" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470356" />
-    <state width="1638" height="265" key="GridCell.Tab.0.right" timestamp="1588775470357">
+    <state width="1638" height="265" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588781546605" />
+    <state width="1638" height="265" key="GridCell.Tab.0.right" timestamp="1588781546606">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207011" />
-    <state width="1638" height="265" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470357" />
+    <state width="1638" height="265" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588781546606" />
     <state x="591" y="254" key="RollbackChangesDialog" timestamp="1588588777301">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
