@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "stepdefs",
-        tags = "@Debug"
+        tags = "@SignIn,@Debug"
 )
 public class MyDebugTest {      //простой сценарий для ловли своих ошибок(не учавствует в тестировании)
 }

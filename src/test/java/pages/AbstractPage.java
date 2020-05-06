@@ -1,9 +1,12 @@
 package pages;
 
 import annotations.Element;
+import annotations.Elements;
 import annotations.Page;
+import com.codeborne.selenide.ElementsCollection;
 import org.apache.http.MethodNotSupportedException;
 import org.openqa.selenium.WebElement;
+import pages.interfaces.ElementAction;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -12,7 +15,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-public abstract class AbstractPage {
+public abstract class AbstractPage implements ElementAction {
     public static final String PATH="/Users/serikovsergej/coding/intellij_idea/maven_webdriver/src/test/java/pages";
     public static final String PACK="pages";
 
@@ -69,6 +72,15 @@ public abstract class AbstractPage {
         }
         throw new ClassNotFoundException("класса с аннотацией"+ title + "нет");
 
+    }
+    public ElementsCollection getElementsByName(String name) throws InvocationTargetException, IllegalAccessException, MethodNotSupportedException {
+        for(Method method: this.getClass().getMethods()){
+            Elements  elementsAn=method.getAnnotation(Elements.class);
+            if(elementsAn!=null&& elementsAn.value().equals(name)){
+               return(ElementsCollection) method.invoke(this);
+            }
+        }
+        throw new MethodNotSupportedException("метода с аннотацией" + name +" нет");
     }
 
 

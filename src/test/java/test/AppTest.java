@@ -15,8 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import test.constants.CssSelectors;
 import test.constants.XpathSelectors;
-import test.interfaces.ElementAction;
-import test.selectorEnum.SelectorEnum;
+import pages.interfaces.ElementAction;
 
 /**
  * Unit test for simple App.

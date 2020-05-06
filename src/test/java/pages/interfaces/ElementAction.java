@@ -1,12 +1,14 @@
-package test.interfaces;
+package pages.interfaces;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import test.selectorEnum.SelectorEnum;
 
 import static com.codeborne.selenide.Condition.enabled;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static org.junit.Assert.assertEquals;
 
 public interface ElementAction {
@@ -25,7 +27,7 @@ public interface ElementAction {
             element.shouldHave(Condition.visible).shouldHave(enabled).click();
 
     }
-    private SelenideElement getSelenideElement(String selector,SelectorEnum selectorEnum){
+    default SelenideElement getSelenideElement(String selector,SelectorEnum selectorEnum){
         SelenideElement element=null;
         switch (selectorEnum){
             case CSS_SELECTOR: return element=$(selector);
@@ -34,4 +36,14 @@ public interface ElementAction {
             default:return null;
         }
     }
+    default ElementsCollection getSelCollection(String selector, SelectorEnum selectorEnum){
+        ElementsCollection element=null;
+        switch (selectorEnum){
+            case CSS_SELECTOR: return element=$$(selector);
+
+            case XPATH_SELECTOR: return element=$$(By.xpath(selector));
+            default:return null;
+        }
+    }
+
 }

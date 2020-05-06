@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93aae763-a099-4bb9-96f3-dfe379cc7a40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="93aae763-a099-4bb9-96f3-dfe379cc7a40" name="Default Changelist" comment="cucumber commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/annotations/Elements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TopicPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/MyLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/pc/Lo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/pc/Me.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/pc/Se.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/MyDebugTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/MyDebugTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AbstractPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/Hook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/MyStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/interfaces/ElementAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/interfaces/ElementAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/MyDebugTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/MyDebugTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/AbstractPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/Hook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/Hook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/MyStepdefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/MyStepdefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/interfaces/ElementAction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/interfaces/ElementAction.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="maven_webdriver" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -167,38 +187,38 @@
     </state>
     <state x="583" y="373" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1588520855304" />
     <state x="583" y="388" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1588521801559" />
-    <state x="421" y="469" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588588597392">
+    <state x="421" y="469" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588750751829">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="421" y="469" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1588588597392" />
+    <state x="421" y="469" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1588750751829" />
     <state x="614" y="424" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1588588602349">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="614" y="424" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1680.1027@0.23.1680.1027" timestamp="1588588602349" />
-    <state x="469" y="139" key="CommitChangelistDialog2" timestamp="1588428095553">
+    <state x="469" y="139" key="CommitChangelistDialog2" timestamp="1588775642307">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="469" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588428095553" />
-    <state width="1638" height="265" key="GridCell.Tab.0.bottom" timestamp="1588615768180">
+    <state x="469" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588775642307" />
+    <state width="1638" height="265" key="GridCell.Tab.0.bottom" timestamp="1588775470358">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207012" />
-    <state width="1638" height="265" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588615768180" />
-    <state width="1638" height="265" key="GridCell.Tab.0.center" timestamp="1588615768179">
+    <state width="1638" height="265" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470358" />
+    <state width="1638" height="265" key="GridCell.Tab.0.center" timestamp="1588775470356">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207011" />
-    <state width="1638" height="265" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588615768179" />
-    <state width="1638" height="265" key="GridCell.Tab.0.left" timestamp="1588615768178">
+    <state width="1638" height="265" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470356" />
+    <state width="1638" height="265" key="GridCell.Tab.0.left" timestamp="1588775470356">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207010" />
-    <state width="1638" height="265" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588615768178" />
-    <state width="1638" height="265" key="GridCell.Tab.0.right" timestamp="1588615768179">
+    <state width="1638" height="265" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470356" />
+    <state width="1638" height="265" key="GridCell.Tab.0.right" timestamp="1588775470357">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1588520207011" />
-    <state width="1638" height="265" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588615768179" />
+    <state width="1638" height="265" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1588775470357" />
     <state x="591" y="254" key="RollbackChangesDialog" timestamp="1588588777301">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -225,5 +245,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="597" y="465" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1588427503528" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1588758053434">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1588758053434" />
   </component>
 </project>
