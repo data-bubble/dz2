@@ -1,18 +1,29 @@
 package pages;
 
+import annotations.CssSelector;
 import annotations.Element;
 import annotations.Elements;
+import annotations.XpathSelector;
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import test.constants.CssSelectors;
 import test.constants.XpathSelectors;
 import test.selectorEnum.SelectorEnum;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.codeborne.selenide.Selenide.$;
 
 @annotations.Page(title = "Главная",url = "https://dev.n7lanit.ru/")
 public class MainPage extends AbstractPage {
+    private List<String> subscribeThemes;
+
+    public MainPage(){
+        subscribeThemes=new ArrayList<>();
+    }
 
         @Element("Темы")
     public WebElement getThemesTab(){
@@ -44,6 +55,28 @@ public class MainPage extends AbstractPage {
             public ElementsCollection getSelenideCollection(){
                 return getSelCollection(CssSelectors.LIST_OF_THEMES,SelectorEnum.CSS_SELECTOR);
 
-
     }
+    @Element("Подписки")
+        public WebElement getSubscribeTab(){
+        return getSelenideElement(XpathSelectors.SUBSCRIBE_TAB,SelectorEnum.XPATH_SELECTOR);
+        }
+    @XpathSelector(name = "Подписаться",selector = XpathSelectors.SUBSCRIBE_ITEM_OF_MENU)
+    public By getElementsByMenu(By by){
+        return by;
+    }
+    @XpathSelector(name = "заголовок",selector = XpathSelectors.TITLE_OF_THEME)
+        public By getSelectorByElement(By by){
+            return by;
+        }
+        @XpathSelector(name="Неактивна",selector=XpathSelectors.SUBSRIBE_BUTTON_MAIN)
+    public By getXpathSelector(By by){
+            return by;
+        }
+        public boolean addTheme(String theme) {
+            return subscribeThemes.add(theme);
+        }
+        public List<String> getSubscribeThemes(){
+        return subscribeThemes;
+        }
+
 }

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "stepdefs",
-        tags = "@SignIn,@Debug"
+        tags = "@SignIn,@AddSubscribe"
 )
-public class MyDebugTest {      //простой сценарий для ловли своих ошибок(не учавствует в тестировании)
+public class MySubscribeTest {      //простой сценарий для ловли своих ошибок(не учавствует в тестировании)
 }

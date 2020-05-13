@@ -1,12 +1,12 @@
 package pages;
 
-import annotations.Element;
-import annotations.Elements;
-import annotations.Page;
+import annotations.*;
 import com.codeborne.selenide.ElementsCollection;
 import org.apache.http.MethodNotSupportedException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.interfaces.ElementAction;
+import test.selectorEnum.SelectorEnum;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -79,6 +79,18 @@ public abstract class AbstractPage implements ElementAction {
             if(elementsAn!=null&& elementsAn.value().equals(name)){
                return(ElementsCollection) method.invoke(this);
             }
+        }
+        throw new MethodNotSupportedException("метода с аннотацией" + name +" нет");
+    }
+    public By getSelectorByName(String name) throws InvocationTargetException, IllegalAccessException, MethodNotSupportedException {
+        for (Method method : this.getClass().getMethods()) {
+            CssSelector elementAn = method.getAnnotation(CssSelector.class);
+            if (elementAn != null && elementAn.name().equals(name)) {
+                return (By)method.invoke(this,By.cssSelector(elementAn.selector()));
+                }
+            XpathSelector xpAn=method.getAnnotation(XpathSelector.class);
+            if(xpAn != null && xpAn.name().equals(name))
+             return (By)method.invoke(this,By.xpath(xpAn.selector()));
         }
         throw new MethodNotSupportedException("метода с аннотацией" + name +" нет");
     }
